@@ -1,0 +1,15 @@
+-Xajruntimetarget:1.5
+-1.8
+-encoding
+UTF-8
+-source
+1.8
+-target
+1.8
+-classpath
+C:\Users\Toby\.m2\repository\org\aspectj\aspectjrt\1.8.10\aspectjrt-1.8.10.jar;C:\Users\Toby\.m2\repository\junit\junit\4.12\junit-4.12.jar;D:\Google Drive\My Documents\Sitios\aspectj-with-scala\model\target\model-1.0-SNAPSHOT.jar;C:\Users\Toby\.m2\repository\org\scala-lang\scala-library\2.12.1\scala-library-2.12.1.jar;D:\Google Drive\My Documents\Sitios\aspectj-with-scala\aspect\target\classes
+-inpath
+D:\Google Drive\My Documents\Sitios\aspectj-with-scala\aspect\target/unwoven-classes
+-d
+D:\Google Drive\My Documents\Sitios\aspectj-with-scala\aspect\target\classes
+D:\Google Drive\My Documents\Sitios\aspectj-with-scala\aspect\src\main\java\aspects\AnnotationAspect.aj
