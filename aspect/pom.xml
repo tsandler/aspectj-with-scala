@@ -22,6 +22,10 @@
                             <groupId>Group</groupId>
                             <artifactId>model</artifactId>
                         </weaveDependency>
+                        <weaveDependency>
+                            <groupId>com.google.code.gson</groupId>
+                            <artifactId>gson</artifactId>
+                        </weaveDependency>
                     </weaveDependencies>
                 </configuration>
             </plugin>
@@ -44,6 +48,10 @@
         <dependency>
             <groupId>Group</groupId>
             <artifactId>model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
 
