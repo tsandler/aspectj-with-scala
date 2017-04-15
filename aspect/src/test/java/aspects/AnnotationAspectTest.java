@@ -1,5 +1,6 @@
 package aspects;
 
+import com.google.gson.Gson;
 import model.JavaEntity;
 import model.ScalaEntity;
 import org.junit.Assert;
@@ -26,6 +27,12 @@ public class AnnotationAspectTest {
     @Test
     public void testingInterceptWithJava(){
         javaEntity.setName("newName");
+        Assert.assertEquals("intercepted", javaEntity.getName());
+    }
+
+    @Test
+    public void testingInterceptWithJavaGson(){
+        javaEntity = new Gson().fromJson("{\"name\":\"newName\"}", JavaEntity.class);
         Assert.assertEquals("intercepted", javaEntity.getName());
     }
 }
