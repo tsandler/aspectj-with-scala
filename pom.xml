@@ -72,9 +72,6 @@
                             <goals>
                                 <goal>compile</goal>
                             </goals>
-                            <configuration>
-                                <outputDir>${project.build.directory}/classes</outputDir>
-                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
