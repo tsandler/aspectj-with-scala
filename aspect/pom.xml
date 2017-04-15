@@ -16,6 +16,14 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
+                <configuration>
+                    <weaveDependencies>
+                        <weaveDependency>
+                            <groupId>Group</groupId>
+                            <artifactId>model</artifactId>
+                        </weaveDependency>
+                    </weaveDependencies>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
