@@ -7,7 +7,7 @@ public aspect AnnotationAspect {
 
     pointcut hasAnnotation(Annotation annotation) : @annotation(annotation);
 
-    Object around(Annotation annotation, String pass) : hasAnnotation(annotation) && set(String *) && args(pass) {
+    Object around(Annotation annotation, String value) : hasAnnotation(annotation) && set(String *) && args(value) {
         Object result = null;
         System.out.println(thisJoinPoint);
         try {
