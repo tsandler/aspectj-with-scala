@@ -5,13 +5,13 @@ import java.lang.reflect.Field;
 
 public aspect AnnotationAspect {
 
-    pointcut hasAnnotation(Annotation encryptedWithAnnotation) : @annotation(encryptedWithAnnotation);
+    pointcut hasAnnotation(Annotation annotation) : @annotation(annotation);
 
-    Object around(Annotation encryptedWithAnnotation, String pass) : hasAnnotation(encryptedWithAnnotation) && set(String *) && args(pass) {
+    Object around(Annotation annotation, String pass) : hasAnnotation(annotation) && set(String *) && args(pass) {
         Object result = null;
         System.out.println(thisJoinPoint);
         try {
-            result = proceed(encryptedWithAnnotation, "intercepted");
+            result = proceed(annotation, "intercepted");
         } catch (RuntimeException ex) {
             throw ex;
         }
